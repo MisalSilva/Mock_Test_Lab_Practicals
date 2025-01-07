@@ -18,7 +18,7 @@ public class Logger {
     }
 
     public static void logTicketOperation(String operation, String ticketId){
-        String message = String.format("Ticket Id: %s,  Operation: %s", ticketId, operation);
+        String message = String.format("Ticket Id: %s,  Operation: %s", LocalDateTime.now(), ticketId, operation);
         System.out.println(message);
         log(message);
     }
