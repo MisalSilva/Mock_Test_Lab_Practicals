@@ -16,4 +16,10 @@ public class Logger {
             e.printStackTrace();
         }
     }
+
+    public static void logTicketOperation(String operation, String ticketId){
+        String message = String.format("Ticket Id: %s,  Operation: %s", ticketId, operation);
+        System.out.println(message);
+        log(message);
+    }
 }
